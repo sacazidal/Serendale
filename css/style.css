@@ -1,0 +1,322 @@
+@font-face {
+    font-family: 'CabinetGrotesk-Regular';
+    src: url(./../fonts/CabinetGrotesk-Regular.otf);
+}
+@font-face {
+    font-family: 'Chillax-Medium';
+    src: url(./../fonts/Chillax-Medium.otf);
+}
+@font-face {
+    font-family: 'ClashGrotesk-Medium';
+    src: url(./../fonts/ClashGrotesk-Medium.otf);
+}
+@font-face {
+    font-family: 'ClashGrotesk-Regular';
+    src: url(./../fonts/ClashGrotesk-Regular.otf);
+}
+@font-face {
+    font-family: 'SpaceGrotesk-Regular';
+    src: url(./../fonts/SpaceGrotesk-Regular.ttf);
+}
+:root {
+    --CabinetGrotesk-Regular: 'CabinetGrotesk-Regular', sans-serif;
+    --Chillax-Medium: 'Chillax-Medium', sans-serif;
+    --ClashGrotesk-Medium: 'ClashGrotesk-Medium', sans-serif;
+    --ClashGrotesk-Regular: 'ClashGrotesk-Regular', sans-serif;
+    --SpaceGrotesk-Regular: 'SpaceGrotesk-Regular', sans-serif;
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #000000;
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.container {
+    width: 1340px;
+    margin: 0 auto;
+}
+.header {
+    margin-top: 54px;
+    margin-bottom: 187px;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    font-family: var(--Chillax-Medium);
+    font-size: 24px;
+}
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.nav__menu_item {
+    font-family: var(--ClashGrotesk-Regular);
+    font-size: 18px;
+}
+.nav__social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.main {
+    position: relative;
+}
+.main__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.info__blockchain {
+    font-family: var(--ClashGrotesk-Medium);
+    font-size: 80px;
+    letter-spacing: 0.02em;
+    background: linear-gradient(90deg, #ff3bff 0%, #ecbfbf 38.02%, #5c24ff 75.83%, #d94fd5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.info__AI {
+    font-family: var(--ClashGrotesk-Medium);
+    font-size: 80px;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+.info__text {
+    font-family: var(--CabinetGrotesk-Regular);
+    font-size: 20px;
+    color: #FFFFFF;
+    max-width: 723px;
+    margin-bottom: 32px;
+}
+.info__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+.btn-started {
+    background: #000000;
+    color: #FFFFFF;
+    font-family: var(--SpaceGrotesk-Regular);
+    font-size: 20px;
+    padding: 22px 32px;
+    border-radius: 100px;
+    cursor: pointer;
+    border: 2px solid #d94fd5;
+}
+.btn-systems {
+    background: #000000;
+    color: #FFFFFF;
+    font-family: var(--SpaceGrotesk-Regular);
+    font-size: 20px;
+    padding: 22px 32px;
+    border-radius: 100px;
+    cursor: pointer;
+    border: 2px solid #FFFFFF;
+}
+.main__chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bottom-image {
+    max-width: 100%;
+    position: absolute;
+    top: 120px;
+    z-index: -1;
+}
+@media (max-width: 1440px) {
+    .container {
+        width: 1000px;
+    }
+    .header {
+        margin-top: 45px;
+        margin-bottom: 160px;
+    }
+    .header__logo {
+        font-size: 20px;
+    }
+    .nav__menu {
+        gap: 30px;
+    }
+    .nav__menu_item {
+        font-size: 16px;
+    }
+    .nav__social {
+        gap: 14px;
+    }
+    .info__blockchain {
+        font-size: 60px;
+    }
+    .info__AI {
+        font-size: 60px;
+        margin-bottom: 16px;
+    }
+    .info__text {
+        font-size: 16px;
+        max-width: 640px;
+        margin-bottom: 32px;
+    }
+    .info__btn {
+        gap: 10px;
+    }
+    .btn-started {
+        font-size: 18px;
+        padding: 18px 28px;
+    }
+    .btn-systems {
+        font-size: 18px;
+        padding: 18px 28px;
+    }
+}
+@media (max-width: 1000px) {
+    .container {
+        width: 820px;
+    }
+    .header {
+        margin-top: 45px;
+        margin-bottom: 140px;
+    }
+    .header__logo {
+        font-size: 18px;
+    }
+    .nav__menu {
+        gap: 28px;
+    }
+    .nav__menu_item {
+        font-size: 14px;
+    }
+    .nav__social {
+        gap: 12px;
+    }
+    .info__blockchain {
+        font-size: 50px;
+    }
+    .info__AI {
+        font-size: 50px;
+        margin-bottom: 14px;
+    }
+    .info__text {
+        font-size: 14px;
+        max-width: 500px;
+        margin-bottom: 30px;
+    }
+    .btn-started {
+        font-size: 16px;
+        padding: 14px 24px;
+    }
+    .btn-systems {
+        font-size: 16px;
+        padding: 14px 24px;
+    }
+}
+@media (max-width: 820px) {
+    .container {
+        width: 620px;
+    }
+    .header__logo {
+        font-size: 20px;
+    }
+    .nav__menu {
+        display: none;
+    }
+    .nav__menu_item {
+        font-size: 16px;
+    }
+    .nav__social {
+        gap: 14px;
+    }
+    .info__blockchain {
+        font-size: 60px;
+    }
+    .info__AI {
+        font-size: 60px;
+        margin-bottom: 16px;
+    }
+    .info__text {
+        font-size: 16px;
+        max-width: 640px;
+        margin-bottom: 32px;
+    }
+    .info__btn {
+        gap: 10px;
+    }
+    .btn-started {
+        font-size: 18px;
+        padding: 18px 28px;
+    }
+    .btn-systems {
+        font-size: 18px;
+        padding: 18px 28px;
+    }
+}
+@media (max-width: 440px) {
+    .container {
+        width: 420px;
+    }
+    .header {
+        margin-top: 40px;
+        margin-bottom: 120px;
+    }
+    .header__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__logo {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .nav__menu {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    .nav__menu_item {
+        font-size: 14px;
+    }
+    .nav__social {
+        display: flex;
+    }
+    .info__blockchain {
+        font-size: 45px;
+    }
+    .info__AI {
+        font-size: 45px;
+    }
+    .info__text {
+        font-size: 18px;
+        max-width: 400px;
+    }
+    .btn-started {
+        font-size: 18px;
+        padding: 18px 28px;
+    }
+    .btn-systems {
+        font-size: 18px;
+        padding: 18px 28px;
+    }
+    .bottom-image {
+        top: 275px;
+    }
+}
